@@ -1,0 +1,24 @@
+# Ignore virtual environments
+venv/
+env/
+.venv/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore large data files (raw and processed)
+# Note: Usually we don't push large CSVs to GitHub. 
+# We push scripts to download/generate them instead.
+data/raw/*.csv
+data/processed/*.csv
+
+# Ignore model files if they are too large
+# models/*.pkl
+
+# Ignore IDE specific files
+.vscode/
+.idea/

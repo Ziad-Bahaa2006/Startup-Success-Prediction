@@ -1,0 +1,102 @@
+{
+    "numerical_medians": {
+        "funding_total_usd": 2000000.0,
+        "company_age": 5.0,
+        "funding_duration_days": 0.0,
+        "time_to_first_funding_days": 586.0
+    },
+    "capping_bounds": {
+        "funding_total_usd": {
+            "lower": 10000.0,
+            "upper": 56000000.0
+        },
+        "funding_rounds": {
+            "lower": 1.0,
+            "upper": 4.0
+        },
+        "company_age": {
+            "lower": 0.0,
+            "upper": 17.0
+        },
+        "funding_duration_days": {
+            "lower": 0.0,
+            "upper": 1813.0
+        },
+        "time_to_first_funding_days": {
+            "lower": 0.0,
+            "upper": 4373.649999999994
+        }
+    },
+    "mode_country": "USA",
+    "top_20_categories": [
+        "Biotechnology",
+        "Software",
+        "E-Commerce",
+        "Advertising",
+        "Curated Web",
+        "Mobile",
+        "Analytics",
+        "Apps",
+        "Health Care",
+        "Clean Technology",
+        "Enterprise Software",
+        "Games",
+        "Health and Wellness",
+        "Hardware + Software",
+        "Finance",
+        "Education",
+        "Manufacturing",
+        "Consulting",
+        "Internet",
+        "Cloud Computing"
+    ],
+    "top_10_countries": [
+        "USA",
+        "GBR",
+        "CAN",
+        "IND",
+        "CHN",
+        "FRA",
+        "DEU",
+        "ISR",
+        "ESP",
+        "AUS"
+    ],
+    "feature_columns": [
+        "funding_total_usd",
+        "funding_rounds",
+        "company_age",
+        "funding_duration_days",
+        "time_to_first_funding_days",
+        "country_code_CAN",
+        "country_code_CHN",
+        "country_code_DEU",
+        "country_code_ESP",
+        "country_code_FRA",
+        "country_code_GBR",
+        "country_code_IND",
+        "country_code_ISR",
+        "country_code_Other",
+        "country_code_USA",
+        "primary_category_Analytics",
+        "primary_category_Apps",
+        "primary_category_Biotechnology",
+        "primary_category_Clean Technology",
+        "primary_category_Consulting",
+        "primary_category_Curated Web",
+        "primary_category_E-Commerce",
+        "primary_category_Education",
+        "primary_category_Enterprise Software",
+        "primary_category_Finance",
+        "primary_category_Games",
+        "primary_category_Hardware + Software",
+        "primary_category_Health Care",
+        "primary_category_Health and Wellness",
+        "primary_category_Internet",
+        "primary_category_Manufacturing",
+        "primary_category_Mobile",
+        "primary_category_Other",
+        "primary_category_Software",
+        "primary_category_Unknown"
+    ]
+}
