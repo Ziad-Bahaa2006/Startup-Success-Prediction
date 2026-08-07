@@ -1,96 +1,114 @@
 <div align="center">
-  <img src="https://img.icons8.com/color/100/000000/startup.png" alt="Startup Logo">
-  <h1>🚀 مشروع التنبؤ بنجاح الشركات الناشئة (Startup Success Prediction)</h1>
-  <p><strong>تطبيق متكامل يعتمد على تعلم الآلة لتحليل وتوقع نجاح الشركات الناشئة</strong></p>
-  
-  [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-  [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/)
-  [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-  [![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+
+<img src="https://img.icons8.com/?size=256&id=46101&format=png" alt="Startup Success Predictor Logo" width="120">
+
+# 🚀 Startup Success Predictor
+
+**An End-to-End Machine Learning Solution for Predicting Startup Outcomes**
+
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-Enabled-009688?style=for-the-badge)](https://xgboost.readthedocs.io/)
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
+
+*Developed for the Cretiva NTI Track (Machine Learning for Data Science) Graduation Project.*
+
+---
 </div>
+
+## 📖 Table of Contents
+- [About the Project](#-about-the-project)
+- [Key Features](#-key-features)
+- [Architecture & Methodology](#-architecture--methodology)
+- [Repository Structure](#-repository-structure)
+- [Getting Started](#-getting-started)
+- [Usage & Web App](#-usage--web-app)
+- [Team Contributions](#-team-contributions)
+- [License](#-license)
 
 ---
 
-## 📖 نبذة عن المشروع
-تم تطوير هذا المشروع كجزء من مشروع التخرج لمسار **Cretiva NTI Track (Machine Learning for Data Science)**. 
-يهدف المشروع إلى التنبؤ بما إذا كانت الشركة الناشئة ستحقق النجاح (مثل الاستحواذ أو الطرح العام) أو ستفشل، وذلك بالاعتماد على بيانات تاريخية تتضمن تفاصيل التمويل، فئات الصناعة، والموقع الجغرافي، وغيرها من العوامل المؤثرة.
+## 💡 About the Project
+Venture capital and startup investments involve high risk. The **Startup Success Predictor** is an intelligent web application designed to forecast whether a startup will eventually succeed (e.g., via acquisition or IPO) or fail. By analyzing historical funding data, industry categories, geographical locations, and operational timelines, our models provide actionable insights to potential investors and founders.
 
-## ✨ المميزات الرئيسية
-- 📊 **تحليل استكشافي شامل (EDA):** معالجة القيم المفقودة، هندسة الميزات، واكتشاف الأنماط.
-- 🧠 **نماذج تعلم آلة متقدمة:** مقارنة بين عدة خوارزميات (Random Forest, XGBoost, Logistic Regression) لاختيار النموذج الأفضل.
-- 📈 **قابلية التفسير (Model Interpretability):** استخدام أدوات مثل SHAP لتفسير أهمية كل ميزة في اتخاذ القرار.
-- 💻 **واجهة مستخدم تفاعلية (Web App):** تطبيق مبني باستخدام Streamlit يتيح للمستخدمين إدخال بيانات الشركة والحصول على التوقع فوراً (سواء لشركة واحدة أو لعدة شركات عبر ملف CSV).
+## ✨ Key Features
+- **Comprehensive Data Pipeline**: Robust handling of missing values, outlier capping (Winsorization), and advanced feature engineering (e.g., `company_age`, `funding_duration`).
+- **High-Performance Modeling**: Leverages state-of-the-art algorithms including Random Forest, XGBoost, and Logistic Regression with rigorous hyperparameter tuning.
+- **Model Interpretability**: Integrates SHAP values to explain feature importance, bringing transparency to the AI's decision-making process.
+- **Interactive Web Interface**: A sleek, user-friendly Streamlit dashboard allowing single-startup predictions and bulk CSV processing.
 
-## 🛠 التقنيات المستخدمة
-- **البرمجة ومعالجة البيانات:** Python, Pandas, NumPy
-- **تصوير البيانات:** Matplotlib, Seaborn
-- **تعلم الآلة:** Scikit-Learn, XGBoost, SHAP
-- **نشر التطبيق (Deployment):** Streamlit
+## 🏗 Architecture & Methodology
+Our workflow strictly follows the standard Data Science Lifecycle:
+1. **Data Acquisition & EDA**: Understanding the underlying distributions and relationships in the startup ecosystem.
+2. **Preprocessing**: Feature encoding, scaling, and engineering derived metrics to maximize model performance.
+3. **Model Selection**: Cross-validating multiple classifiers to prevent overfitting and select the most robust model.
+4. **Deployment**: Packaging the finalized `.pkl` models and scalers into an interactive Streamlit application.
 
-## 📂 هيكلية المشروع
+## 📂 Repository Structure
 
 ```text
-├── .gitignore                <- الملفات المستثناة من تتبع Git
-├── README.md                 <- ملف الوصف الخاص بالمشروع (هذا الملف)
-├── requirements.txt          <- المكتبات والاعتماديات اللازمة لتشغيل المشروع
 ├── data/
-│   ├── raw/                  <- البيانات الأصلية الخام
-│   └── processed/            <- البيانات المعالجة والجاهزة للتدريب
-├── notebooks/                <- ملفات Jupyter Notebooks
+│   ├── raw/                  <- Original immutable datasets
+│   └── processed/            <- Cleaned datasets ready for modeling
+├── notebooks/                <- Jupyter notebooks for EDA and Model Training
 │   ├── 01_data_cleaning_and_feature_engineering.ipynb
 │   └── 02_machine_learning_modeling.ipynb
-├── models/                   <- النماذج المدربة (Models) والمقاييس (Scalers)
-└── app/                      <- تطبيق الويب (Streamlit)
-    └── app.py
+├── models/                   <- Pickled models, scalers, and config files
+├── app/                      <- Streamlit application for deployment
+│   └── app.py
+├── AI Startup Success Predictor .pptx  <- Final Project Presentation
+├── requirements.txt          <- Dependencies and libraries
+├── .gitignore                <- Files ignored by Git
+└── README.md                 <- Project documentation (You are here)
 ```
 
-## 👥 فريق العمل والأدوار (Team Members)
+## 🚀 Getting Started
 
-<table style="width:100%; text-align:center;">
-  <tr>
-    <th><strong>1. Ziad Bahaa</strong> 📊</th>
-    <th><strong>2. Mohamed</strong> 🤖</th>
-    <th><strong>3. Ahmed</strong> 💻</th>
-  </tr>
-  <tr>
-    <td><b>تحليل ومعالجة البيانات</b><br>
-        - التحليل الاستكشافي (EDA)<br>
-        - معالجة القيم المفقودة والبيانات الشاذة (Outliers)<br>
-        - هندسة الميزات (Feature Engineering)<br>
-        - ترميز وتقييس البيانات (Encoding & Scaling)
-    </td>
-    <td><b>تعلم الآلة والنمذجة</b><br>
-        - بناء واختبار 6-8 نماذج مختلفة<br>
-        - ضبط المعلمات الفائقة (Hyperparameter Tuning)<br>
-        - تقييم النماذج والمقارنة بينها<br>
-        - تفسير مخرجات النماذج (SHAP)
-    </td>
-    <td><b>التطبيق والعرض التقديمي</b><br>
-        - بناء واجهة المستخدم باستخدام Streamlit<br>
-        - دمج نموذج الذكاء الاصطناعي مع الواجهة<br>
-        - تمكين التنبؤ المتعدد (Bulk Prediction)<br>
-        - إعداد العرض التقديمي النهائي (Presentation)
-    </td>
-  </tr>
-</table>
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-## 🚀 كيفية التشغيل (How to Run)
+### Prerequisites
+Make sure you have Python 3.8+ installed. It is highly recommended to use a virtual environment.
 
-للاستمتاع بتجربة التطبيق محلياً على جهازك، يرجى اتباع الخطوات التالية:
+### Installation
+1. **Clone the repository** (if applicable):
+   ```bash
+   git clone https://github.com/YourUsername/Startup-Success-Prediction.git
+   cd Startup-Success-Prediction
+   ```
 
-**1. قم بتثبيت المتطلبات والاعتماديات:**
-تأكد من تواجدك في المجلد الرئيسي للمشروع، ثم نفذ الأمر التالي:
-```bash
-pip install -r requirements.txt
-```
+2. **Install the required dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-**2. تشغيل واجهة المستخدم (Streamlit App):**
+## 💻 Usage & Web App
+
+To launch the interactive dashboard, simply run the Streamlit server from the root directory:
+
 ```bash
 streamlit run app/app.py
 ```
-*سيتم فتح التطبيق تلقائياً في متصفحك الافتراضي على الرابط (غالباً: http://localhost:8501).*
+> **Note**: The application will automatically open in your default web browser at `http://localhost:8501`. 
+
+From the interface, you can:
+- **Predict Single Startup**: Input parameters manually to see the predicted outcome.
+- **Bulk Prediction**: Upload a CSV file (e.g., `test_bulk_startups.csv`) to process multiple startups simultaneously.
+
+## 👥 Team Contributions
+
+This project was a collaborative effort by our dedicated data science team. 
+
+| Member | Focus Area | Key Deliverables |
+| :--- | :--- | :--- |
+| **Ziad Bahaa** | Data Analysis & Preprocessing | EDA, Outlier Handling (Winsorization), Feature Engineering (`company_age`), Scaling, Processed Datasets. |
+| **Mohamed** | Machine Learning & Modeling | Algorithm Selection (RF, XGBoost), Hyperparameter Tuning, Cross-Validation, SHAP Interpretability, Final `model.pkl`. |
+| **Ahmed** | Application & Deployment | Streamlit UI/UX Design, App Architecture (`app.py`), Integration of ML pipelines, Bulk Prediction features, Final Presentation. |
+
+## 📜 License
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 <div align="center">
-  <b>تم التصميم والتطوير بشغف من قِبل فريق العمل 💡</b>
+  <i>Built with ❤️ by the Cretiva NTI Data Science Team.</i>
 </div>
