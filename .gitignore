@@ -13,8 +13,8 @@ __pycache__/
 # Ignore large data files (raw and processed)
 # Note: Usually we don't push large CSVs to GitHub. 
 # We push scripts to download/generate them instead.
-data/raw/*.csv
-data/processed/*.csv
+# data/raw/*.csv
+# data/processed/*.csv
 
 # Ignore model files if they are too large
 # models/*.pkl
