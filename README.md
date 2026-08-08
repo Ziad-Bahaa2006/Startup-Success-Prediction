@@ -73,7 +73,7 @@ Make sure you have Python 3.8+ installed. It is highly recommended to use a virt
 ### Installation
 1. **Clone the repository** (if applicable):
    ```bash
-git clone https://github.com/Ziad-Bahaa2006/Startup-Success-Prediction.git
+   git clone https://github.com/Ziad-Bahaa2006/Startup-Success-Prediction.git
    cd Startup-Success-Prediction
    ```
 
@@ -112,3 +112,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <div align="center">
   <i>Built with ❤️ by the Cretiva NTI Data Science Team.</i>
 </div>
+
