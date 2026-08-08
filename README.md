@@ -45,7 +45,7 @@ Our workflow strictly follows the standard Data Science Lifecycle:
 3. **Model Selection**: Cross-validating multiple classifiers to prevent overfitting and select the most robust model.
 4. **Deployment**: Packaging the finalized `.pkl` models and scalers into an interactive Streamlit application.
 
-## 📂 Repository Structure
+## 📂 Project Structure
 
 ```text
 ├── data/
