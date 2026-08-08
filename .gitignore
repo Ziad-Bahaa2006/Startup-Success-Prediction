@@ -1,24 +1,59 @@
-# Ignore virtual environments
+# ==============================
+# Virtual Environments
+# ==============================
+
 venv/
 env/
 .venv/
 
-# Ignore Python cache
+
+# ==============================
+# Python Cache
+# ==============================
+
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Ignore Jupyter Notebook checkpoints
+
+# ==============================
+# Jupyter Notebook Checkpoints
+# ==============================
+
 .ipynb_checkpoints/
 
-# Ignore large data files (raw and processed)
-# Note: Usually we don't push large CSVs to GitHub. 
-# We push scripts to download/generate them instead.
-# data/raw/*.csv
-# data/processed/*.csv
 
-# Ignore model files if they are too large
-# models/*.pkl
+# ==============================
+# IDE / Editor Files
+# ==============================
 
-# Ignore IDE specific files
 .vscode/
 .idea/
+
+
+# ==============================
+# OS Files
+# ==============================
+
+.DS_Store
+Thumbs.db
+
+
+# ==============================
+# Dataset Files
+# ==============================
+
+# Raw and processed datasets are not tracked
+# because the dataset is relatively large (~55 MB).
+
+data/raw/*.csv
+data/processed/*.csv
+
+
+# ==============================
+# Model Files
+# ==============================
+
+# Model files are intentionally tracked
+# because they are required by the Streamlit application.
