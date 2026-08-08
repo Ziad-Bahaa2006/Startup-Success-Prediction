@@ -8,9 +8,11 @@
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://startup-success-prediction-nti.streamlit.app/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-Enabled-009688?style=for-the-badge)](https://xgboost.readthedocs.io/)
 [![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Try%20it%20now!-brightgreen?style=for-the-badge)](https://startup-success-prediction-nti.streamlit.app/)
+
 
 *Developed for the Cretiva NTI Track (Machine Learning for Data Science) Graduation Project.*
 
@@ -85,7 +87,12 @@ Make sure you have Python 3.8+ installed. It is highly recommended to use a virt
 
 ## 💻 Usage & Web App
 
-To launch the interactive dashboard, simply run the Streamlit server from the root directory:
+### 🌍 Live Demo
+The easiest way to explore the project is through our live web application deployed on Streamlit Cloud:
+👉 **[Try the Startup Success Predictor](https://startup-success-prediction-nti.streamlit.app/)**
+
+### 💻 Run Locally
+If you prefer to run the application on your own machine, launch the Streamlit server from the root directory:
 
 ```bash
 streamlit run app/app.py
