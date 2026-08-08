@@ -57,7 +57,8 @@ Our workflow strictly follows the standard Data Science Lifecycle:
 ├── models/                   <- Pickled models, scalers, and config files
 ├── app/                      <- Streamlit application for deployment
 │   └── app.py
-├── AI Startup Success Predictor .pptx  <- Final Project Presentation
+├── docs/                      
+│   └── AI Startup Success Predictor.pptx  <- Final Project Presentation
 ├── requirements.txt          <- Dependencies and libraries
 ├── .gitignore                <- Files ignored by Git
 └── README.md                 <- Project documentation (You are here)
